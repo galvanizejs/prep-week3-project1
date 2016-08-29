@@ -8,24 +8,6 @@ Below are a number of problems for you to solve
 using JS. The JS code can be written below each
 problem and the result can be displayed in the HTML page.
 
-
-
-//In-Class Discussion Questions (Discuss, these don't need to be typed out):
-
-// What happens if we choose to use global variables rather than local variables? What if some other code uses the same variable names you do? (eg. name, location)
-
-// Why don't we just console.log everything, rather than using return?
-
-// What would happen if we tried to call a function inside of another function?
-
-// Even if we're defining a function that is only one line, how might this make our code easier to read?
-
-
-
-
-
-
-
 BASIC TRACK: 1-10
 ADVANCED TRACK: 11-15
 =======================================================
