@@ -115,6 +115,7 @@ for (i = 1; i < arrayOfPeople.length; i+= 2){
  team2.push(arrayOfPeople[i]);
 }
 console.log("Team 1 members are " + team1);
+console.log("Team 2 members are " + team2);
 }
 teamDivider(teammates);
 
@@ -123,9 +124,20 @@ teamDivider(teammates);
 //     Hint #1: You need to turn a string into an integer.
 //     Hint #2: Strings can be treated as arrays too.
 
+function userSum(userInput){
+  var userArray = userInput.split("");
+
+  var total = 0;
+  for (i=0; i < userArray.length; i++){
+    var numbers = parseInt(userArray[i]);
+    total += numbers;
+  }
+  return "The total is " + total;
+}
 
 
-
+var promptInput = prompt("Input a 3 digit number");
+console.log(userSum(promptInput));
 
 // 12. You've finally gotten around to counting the change in your piggy bank.
 //     Write a function that accepts four parameters from a user (quarters, dimes, nickels, and pennies).
@@ -133,7 +145,12 @@ teamDivider(teammates);
 //     Finally, it should return the total amount of change you have in the following format: "$32.77"
 //     HINT: Understanding the toFixed method will help you with the format.
 
-
+function treasureChest(quarters, dimes, nickels, pennies){
+  var total = (0.25 * quarters) + (0.1 * dimes) + (0.05 * nickels) + (0.01 * pennies);
+  var money = total.toFixed(2);
+  return "Score! Your treasure chest has served up $" + money + "!";
+}
+console.log(treasureChest(3, 99, 76, 32));
 
 
 
